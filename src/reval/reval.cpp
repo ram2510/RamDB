@@ -60,5 +60,17 @@ void Reval::askUserInput(){
  * @decription - this method will be used to print the >>
  */
 void Reval::printPrompt(){
-  cout<<"\n>> ";
+  cout<<"\nramdb> ";
+}
+
+/**
+ * @method - getCmd
+ * 
+ * @description- return the command string stored in the pointer
+ * 
+ * @return - string 
+ */
+
+string Reval::getCmd(){
+  return *cmd;
 }

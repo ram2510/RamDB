@@ -30,6 +30,9 @@ class Reval {
 
     // this method will be used to print the prompt ">>"
     void printPrompt();
+
+    // this method will return the value stored in the pointer i.e the command use
+    string getCmd();
 };
 
 #endif 
