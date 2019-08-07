@@ -35,14 +35,14 @@ Reval::~Reval(){
  * @description - This method will print the welcome message whenever the user types the program
 */
 void Reval::printWelcMessage(){
-  cout<<"\n  Welcome user to RamDB - A simple Database hope you are having a good day"<<endl;
+  cout<<termcolor::green<<"\n  Welcome user to RamDB - A simple Database hope you are having a good day"<<endl;
   cout<<"  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "<<endl;
   cout<<" |                                                                          |"<<endl;
   cout<<" |         Press The help command to know all the command you can use       |"<<endl;
   cout<<" |                                  OR                                      |"<<endl;
   cout<<" |         Get your hand dirty with the command you already know. lets go   |"<<endl;
   cout<<" |                                                                          |"<<endl;
-  cout<<" |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ |"<<endl;
+  cout<<" |_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ |"<<termcolor::reset<<endl;
 }
 
 /**
