@@ -1,5 +1,6 @@
 #ifndef COMMAND_H_
 #define COMMAND_H_
+#include<string>
 
 //========================================================================================
 /*                                                                                      *
@@ -21,14 +22,14 @@ class Command{
   public:
 
     // this method will be used to check the syntax of the command
-    bool checkCommand();
+    bool checkCommand(const std::string *input);
 
     // this command will be used to store the number associated with the statment in the statmenttype data member
     // return error if the input is worng
-    bool prepareStatement();
+    bool prepareStatement(const std::string *input);
 
     // excute the statment depending upon the number in the statementType data member
-    void executeStatement();
+    //void executeStatement();
 };
 
 #endif 

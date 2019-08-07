@@ -51,7 +51,7 @@ void Reval::printWelcMessage(){
  * @description - This method will be use to accept the user input and store in the pointer variable
  */
 void Reval::askUserInput(){
-  cin>>*cmd;
+  getline(cin,*cmd);
 }
 
 /**

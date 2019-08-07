@@ -123,6 +123,33 @@ db/fast:
 	$(MAKE) -f CMakeFiles/db.dir/build.make CMakeFiles/db.dir/build
 .PHONY : db/fast
 
+src/command/command.o: src/command/command.cpp.o
+
+.PHONY : src/command/command.o
+
+# target to build an object file
+src/command/command.cpp.o:
+	$(MAKE) -f CMakeFiles/db.dir/build.make CMakeFiles/db.dir/src/command/command.cpp.o
+.PHONY : src/command/command.cpp.o
+
+src/command/command.i: src/command/command.cpp.i
+
+.PHONY : src/command/command.i
+
+# target to preprocess a source file
+src/command/command.cpp.i:
+	$(MAKE) -f CMakeFiles/db.dir/build.make CMakeFiles/db.dir/src/command/command.cpp.i
+.PHONY : src/command/command.cpp.i
+
+src/command/command.s: src/command/command.cpp.s
+
+.PHONY : src/command/command.s
+
+# target to generate assembly for a file
+src/command/command.cpp.s:
+	$(MAKE) -f CMakeFiles/db.dir/build.make CMakeFiles/db.dir/src/command/command.cpp.s
+.PHONY : src/command/command.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... db"
 	@echo "... edit_cache"
+	@echo "... src/command/command.o"
+	@echo "... src/command/command.i"
+	@echo "... src/command/command.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
