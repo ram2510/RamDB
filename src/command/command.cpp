@@ -27,7 +27,7 @@ bool Command::checkCommand(const string *inputPtr){
 }
 
 /**
- * @method of Comand
+ * @method of Command
  * 
  * @param inputPtr (string pointer) we will use this to determine the statement type
  * 
@@ -61,4 +61,22 @@ bool Command::prepareStatement(const string *inputPtr){
 
   // return false indicating error as unrecognizable command
   return false;
+}
+
+/*
+* @method of Command
+*
+* @param None
+*
+* @description This method is a getter method and returns the statementType depdneing on the input
+*                The type of statements with corresponding number
+*                1 - Insert
+*                2 - Select
+*                3 - Delete
+*                4 - Display
+
+* @return int depending on the user input
+*/
+int Command::returnStatementType(){
+  return statementType;
 }

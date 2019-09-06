@@ -177,6 +177,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/db.dir/build.make CMakeFiles/db.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/operations/operations.o: src/operations/operations.cpp.o
+
+.PHONY : src/operations/operations.o
+
+# target to build an object file
+src/operations/operations.cpp.o:
+	$(MAKE) -f CMakeFiles/db.dir/build.make CMakeFiles/db.dir/src/operations/operations.cpp.o
+.PHONY : src/operations/operations.cpp.o
+
+src/operations/operations.i: src/operations/operations.cpp.i
+
+.PHONY : src/operations/operations.i
+
+# target to preprocess a source file
+src/operations/operations.cpp.i:
+	$(MAKE) -f CMakeFiles/db.dir/build.make CMakeFiles/db.dir/src/operations/operations.cpp.i
+.PHONY : src/operations/operations.cpp.i
+
+src/operations/operations.s: src/operations/operations.cpp.s
+
+.PHONY : src/operations/operations.s
+
+# target to generate assembly for a file
+src/operations/operations.cpp.s:
+	$(MAKE) -f CMakeFiles/db.dir/build.make CMakeFiles/db.dir/src/operations/operations.cpp.s
+.PHONY : src/operations/operations.cpp.s
+
 src/reval/reval.o: src/reval/reval.cpp.o
 
 .PHONY : src/reval/reval.o
@@ -219,6 +246,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/operations/operations.o"
+	@echo "... src/operations/operations.i"
+	@echo "... src/operations/operations.s"
 	@echo "... src/reval/reval.o"
 	@echo "... src/reval/reval.i"
 	@echo "... src/reval/reval.s"

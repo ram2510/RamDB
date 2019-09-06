@@ -28,8 +28,8 @@ class Command{
     // return error if the input is worng
     bool prepareStatement(const std::string *input);
 
-    // excute the statment depending upon the number in the statementType data member
-    //void executeStatement();
+    // this method will be the getter method that will return the statememntType
+    int returnStatementType();
 };
 
 #endif 

@@ -11,4 +11,6 @@ add_executable(
   src/reval/reval.cpp
   src/command/command.cpp
   src/command/command.h
+  src/operations/operations.cpp
+  src/operations/operations.h
 )
